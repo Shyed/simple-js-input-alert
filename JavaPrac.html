@@ -1,16 +1,32 @@
+/*
+PROGRAM: Simple Button Interaction Form
+This webpage accepts user input through a text box
+and sends the form data to a JavaScript function
+when the button is clicked.
+*/
+
 <!DOCTYPE html>
 <html>
 
 <head>
   <Title>Lets Do Something</Title>
+  
+  <!-- External stylesheet -->
   <link rel="stylesheet" href="Index.css" />
+
+  <!-- External JavaScript file -->
   <script src="Javaprac.js"></script>
 </head>
 
 <body>
+
+  <!-- User input form -->
   <form>
+    <!-- Text input field -->
     <input type="text" name="inputbox" value="">
     <p>
+
+       <!-- Button triggers testResults() function from external JavaScript file -->
       <input type="button" name="button" value="'Click" onclick="testResults(this.form)">
   </form>
 </body>
